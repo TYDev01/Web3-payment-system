@@ -4,173 +4,88 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trending Collections</title>
+    <title>Footer</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <style>
         .text-tetiary {
             color: #6b7280;
         }
 
-        .text-green {
-            color: #10b981;
+        .bg-light {
+            background-color: #f9fafb;
         }
 
-        .text-red {
-            color: #ef4444;
+        .bg-[#002953] {
+            background-color: #002953;
         }
 
-        .text-secondary {
-            color: #4f46e5;
+        .text-[#003162] {
+            color: #003162;
+        }
+
+        .arrow_right {
+            color: white;
+        }
+
+        .copyright {
+            color: #6b7280;
         }
     </style>
 </head>
 
 <body>
-    <section class="w-full h-full" style="padding: 3rem;">
-        <section class="w-[90%] h-full mx-auto">
-            <section style="margin-top: 9rem;">
-                <h2 class="mb-4 text-2xl md:text-[2.5rem]">
-                    Trending collections
-                </h2>
-                <p class="text-sm mb-4">
-                    See what’s trending in the market based on floor price, volume, etc.
-                </p>
+    <footer class="w-full bg-light">
+        <section
+            class="w-full flex items-center md:items-start justify-center md:justify-between flex-col p-[4%] mx-auto">
+            <section class="flex items-start justify-between flex-wrap w-full">
+                <div class="footer_left">
+                    <div class="footer_logo">
+                        <h2 class="text-4xl font-bold">D-Appsconnect</h2>
+                    </div>
+                    <p class="w-[13.6875rem] text-base my-4">Do almost everything with D-Appsconnect NFT market tools
+                        built for
+                        degens, by degens.</p>
+                    <ul class="flex items-center justify-between text-3xl text-tetiary">
+                        <li>
+                            <i class="fab fa-discord"></i>
+                        </li>
+                        <li>
+                            <i class="fab fa-twitter"></i>
+                        </li>
+                        <li>
+                            <i class="fab fa-telegram"></i>
+                        </li>
+                        <li>
+                            <i class="fab fa-github"></i>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer_right text-left md:text-right">
+                    <i>
+                        <h2 class="text-[1.72rem] text-left md:text-right mb-4">Know what's up</h2>
+                    </i>
+                    <form class="flex items-center justify-between bg-[#002953] mb-4 p-4">
+                        <input type="text" placeholder="your e-mail"
+                            class="bg-[#002953] outline-none text-white placeholder:text-tetiary" />
+                        <i class="fas fa-arrow-right arrow_right"></i>
+                    </form>
+                    <p class="font-normal text-[0.825rem] mb-2 flex items-center justify-start md:justify-end gap-2">
+                        <i class="far fa-copyright copyright"></i>
+                        <span>2024 D-Appsconnect Labs, Inc.</span>
+                    </p>
+                    <p>All Rights Reserved</p>
+                </div>
             </section>
-
-            <section class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8"
-                id="collection-container">
-                <!-- Collection cards will be dynamically inserted here -->
-            </section>
-        </section>
-    </section>
-
-    <!-- Modal -->
-    <div id="modal"
-        class="fixed top-0 left-0 w-full h-full bg-gray-800 bg-opacity-50 flex items-center justify-center">
-        <div class="bg-white p-4 rounded-md shadow-md w-96 relative">
-            <button id="closeModal" class="absolute top-2 right-2 text-gray-500 hover:text-gray-700">&times;</button>
-            <div id="modalContent">
-                <!-- Modal content goes here -->
+            <div class="w-full">
+                <h1
+                    class="text-[#003162] font-bold text-center w-full text-[2.118rem] sm:text-[4.45rem] md:text-[9.75rem] tracking-[0.1rem] sm:tracking-[0.5rem] md:tracking-[0.7rem]">
+                    D-Appsconnect
+                </h1>
             </div>
-        </div>
-    </div>
+        </section>
+    </footer>
 
-    <script>
-        const data = [
-            {
-                image: 'images/clonex.png',
-                title: 'Clone x - x Takashhi Murak...',
-                price: '8.4 ETH',
-                volume: '100.5 ETH',
-                value: -8,
-            },
-            {
-                image: 'images/azuki.png',
-                title: 'Azuki',
-                price: '11.55 ETH',
-                volume: '129.15 ETH',
-                value: 10,
-            },
-            {
-                image: 'images/digi.png',
-                title: 'DigiDaigaku Genesis',
-                price: '10.9 ETH',
-                volume: '120 ETH',
-                value: -19,
-            },
-            {
-                image: 'images/renga.png',
-                title: 'RENGA',
-                price: '1.05 ETH',
-                volume: '46.1 ETH',
-                value: 17,
-            },
-            {
-                image: 'images/HD.png',
-                title: 'HD',
-                price: '0.7 ETH',
-                volume: '38.5 ETH',
-                value: 22,
-            },
-            {
-                image: 'images/doodles.png',
-                title: 'Doodles',
-                price: '6.5 ETH',
-                volume: '68.95 ETH',
-                value: -5,
-            },
-            {
-                image: 'images/deGods.png',
-                title: 'DeGods',
-                price: '560 SOL',
-                volume: '5.2k SOL',
-                value: 8,
-            },
-            {
-                image: 'images/underground.png',
-                title: 'Underground Pass',
-                price: '7.25 ETH',
-                volume: '46.1 ETH',
-                value: 3,
-            },
-        ];
-
-        const collectionContainer = document.getElementById('collection-container');
-        const modal = document.getElementById('modal');
-        const modalContent = document.getElementById('modalContent');
-        const closeModalBtn = document.getElementById('closeModal');
-
-        data.forEach((token, index) => {
-            const card = document.createElement('section');
-            card.className = 'mb-8 cursor-pointer';
-            card.innerHTML = `
-                <div class="w-full">
-                    <img src="${token.image}" alt="collection image" class="w-full h-auto object-cover">
-                </div>
-                <div>
-                    <h3 class="flex items-center gap-2 text-[1.15rem] font-semibold my-2">
-                        ${token.title}
-                        <span class="text-green">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM4.293 7.293a1 1 0 011.414-1.414l1.648 1.647 3.293-3.293a1 1 0 011.414 1.414l-4 4a1 1 0 01-1.414 0l-2-2z" clip-rule="evenodd" /></svg>
-                        </span>
-                    </h3>
-                </div>
-                <div class="flex items-center justify-between">
-                    <h5 class="flex items-start justify-center flex-col text-[0.775rem] text-tetiary">
-                        Floor price
-                        <span class="text-base text-white">${token.price}</span>
-                    </h5>
-                    <h5 class="flex items-start justify-center flex-col text-[0.775rem] text-tetiary">
-                        Volume
-                        <span class="text-base text-white">${token.volume}</span>
-                    </h5>
-                    <small class="mt-4 ${token.value > 0 ? 'text-green' : 'text-red'}">${token.value}%</small>
-                    <span class="text-xl text-secondary mt-4">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 3a1 1 0 00-1 1v5.586L5.707 7.293a1 1 0 10-1.414 1.414l4.5 4.5a1 1 0 001.414 0l4.5-4.5a1 1 0 10-1.414-1.414L11 10.586V5a1 1 0 00-1-1z" clip-rule="evenodd" /><path fill-rule="evenodd" d="M4 14a1 1 0 011-1h10a1 1 0 110 2H5a1 1 0 01-1-1z" clip-rule="evenodd" /></svg>
-                    </span>
-                </div>
-            `;
-
-            card.addEventListener('click', () => handleTokenClick(token));
-            collectionContainer.appendChild(card);
-        });
-
-        const handleTokenClick = (token) => {
-            modalContent.innerHTML = `
-                <div class="mb-4">
-                    <h3 class="text-lg font-semibold">${token.title}</h3>
-                    <p class="text-sm text-gray-600">Floor Price: ${token.price}</p>
-                    <p class="text-sm text-gray-600">Volume: ${token.volume}</p>
-                    <p class="text-sm text-gray-600">Change: <span class="${token.value > 0 ? 'text-green' : 'text-red'}">${token.value}%</span></p>
-                </div>
-            `;
-            modal.classList.remove('hidden');
-        };
-
-        closeModalBtn.addEventListener('click', () => {
-            modal.classList.add('hidden');
-        });
-    </script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 </body>
 
 </html>
