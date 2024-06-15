@@ -119,7 +119,7 @@
     </main>
 
     <!-- Latest Airdrops Section -->
-    <section class="w-full h-full">
+    <!-- <section class="w-full h-full">
         <section class="w-10/12 mx-auto mt-16">
             <section>
                 <h2 class="mb-4 text-2xl md:text-3xl">Latest Airdrops.</h2>
@@ -129,9 +129,9 @@
                 </p>
             </section>
             <section class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-                <!-- Airdrop Cards - Example for two items -->
+                Airdrop Cards - Example for two items
                 <div class="bg-white shadow-md rounded-md p-4 cursor-pointer transition duration-300 hover:shadow-lg"
-                    onclick="handleTokenClick(data[0])">
+                    onclick="handleTokenClick(datasmd[0])">
                     <div class="flex items-center justify-between mb-2">
                         <div class="w-14 h-14 overflow-hidden rounded-full">
                             <img src="public/letit.jpg" alt="airdrop logo" class="object-cover w-full h-full">
@@ -145,7 +145,7 @@
                 </div>
 
                 <div class="bg-white shadow-md rounded-md p-4 cursor-pointer transition duration-300 hover:shadow-lg"
-                    onclick="handleTokenClick(data[1])">
+                    onclick="handleTokenClick(datasmd[1])">
                     <div class="flex items-center justify-between mb-2">
                         <div class="w-14 h-14 overflow-hidden rounded-full">
                             <img src="public/lightlink.jpg" alt="airdrop logo" class="object-cover w-full h-full">
@@ -157,22 +157,47 @@
                     </div>
                     <div class="text-green-500 italic">confirmed</div>
                 </div>
-                <!-- End of Airdrop Cards -->
+                End of Airdrop Cards
             </section>
         </section>
 
-        <!-- Modal -->
+        Modal
         <div id="modal"
             class="fixed top-0 left-0 w-full h-full bg-gray-800 bg-opacity-50 flex items-center justify-center hidden">
             <div class="bg-white p-4 rounded-md shadow-md w-96">
                 <button id="closeModal"
                     class="relative top-0.07 left-2 text-gray-500 hover:text-gray-700">&times;</button>
                 <div id="modalContent">
-                    <!-- Modal content goes here -->
+                    Modal content goes here
                 </div>
             </div>
         </div>
+    </section> -->
+
+    <section class="w-full h-full">
+        <section class="w-11/12 h-full mx-auto">
+            <section class="mt-36">
+                <h2 class="mb-4 text-2xl md:text-4xl">Latest Airdrops.</h2>
+                <p class="text-sm mb-4">
+                    Here you will find the most recent airdrop campaigns. <br /> Connect and get access to all available
+                    airdrops!
+                </p>
+            </section>
+            <section id="airdropList" class="w-full flex items-center justify-between flex-wrap">
+                <!-- JavaScript will populate this section with airdrop cards -->
+            </section>
+        </section>
     </section>
+    
+    <!-- Modal -->
+    <div id="modal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center hidden">
+        <div class="bg-white p-6 rounded-lg max-w-lg mx-auto">
+            <button id="closeModal" class="absolute top-0 right-0 mt-2 mr-2 text-gray-500">X</button>
+            <div id="modalContent">
+                <!-- Modal content will be populated by JavaScript -->
+            </div>
+        </div>
+    </div>
 
 
     <section class="w-full h-full" style="padding: 3rem;">
@@ -254,124 +279,11 @@
         </section>
     </footer>
     
+    <script src="./main.js"></script>
+    <script src="./Js/script.js"></script>
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     
-    <script>
-        const data = [
-            {
-                image: 'images/clonex.png',
-                title: 'Clone x - x Takashhi Murak...',
-                price: '8.4 ETH',
-                volume: '100.5 ETH',
-                value: -8,
-            },
-            {
-                image: 'images/azuki.png',
-                title: 'Azuki',
-                price: '11.55 ETH',
-                volume: '129.15 ETH',
-                value: 10,
-            },
-            {
-                image: 'images/digi.png',
-                title: 'DigiDaigaku Genesis',
-                price: '10.9 ETH',
-                volume: '120 ETH',
-                value: -19,
-            },
-            {
-                image: 'images/renga.png',
-                title: 'RENGA',
-                price: '1.05 ETH',
-                volume: '46.1 ETH',
-                value: 17,
-            },
-            {
-                image: 'images/HD.png',
-                title: 'HD',
-                price: '0.7 ETH',
-                volume: '38.5 ETH',
-                value: 22,
-            },
-            {
-                image: 'images/doodles.png',
-                title: 'Doodles',
-                price: '6.5 ETH',
-                volume: '68.95 ETH',
-                value: -5,
-            },
-            {
-                image: 'images/deGods.png',
-                title: 'DeGods',
-                price: '560 SOL',
-                volume: '5.2k SOL',
-                value: 8,
-            },
-            {
-                image: 'images/underground.png',
-                title: 'Underground Pass',
-                price: '7.25 ETH',
-                volume: '46.1 ETH',
-                value: 3,
-            },
-        ];
 
-        const collectionContainer = document.getElementById('collection-container');
-        const modal = document.getElementById('modal');
-        const modalContent = document.getElementById('modalContent');
-        const closeModalBtn = document.getElementById('closeModal');
-
-        data.forEach((token, index) => {
-            const card = document.createElement('section');
-            card.className = 'mb-8 cursor-pointer';
-            card.innerHTML = `
-                    <div class="w-full">
-                        <img src="${token.image}" alt="collection image" class="w-full h-auto object-cover">
-                    </div>
-                    <div>
-                        <h3 class="flex items-center gap-2 text-[1.15rem] font-semibold my-2">
-                            ${token.title}
-                            <span class="text-green">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM4.293 7.293a1 1 0 011.414-1.414l1.648 1.647 3.293-3.293a1 1 0 011.414 1.414l-4 4a1 1 0 01-1.414 0l-2-2z" clip-rule="evenodd" /></svg>
-                            </span>
-                        </h3>
-                    </div>
-                    <div class="flex items-center justify-between">
-                        <h5 class="flex items-start justify-center flex-col text-[0.775rem] text-tetiary">
-                            Floor price
-                            <span class="text-base text-white">${token.price}</span>
-                        </h5>
-                        <h5 class="flex items-start justify-center flex-col text-[0.775rem] text-tetiary">
-                            Volume
-                            <span class="text-base text-white">${token.volume}</span>
-                        </h5>
-                        <small class="mt-4 ${token.value > 0 ? 'text-green' : 'text-red'}">${token.value}%</small>
-                        <span class="text-xl text-secondary mt-4">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 3a1 1 0 00-1 1v5.586L5.707 7.293a1 1 0 10-1.414 1.414l4.5 4.5a1 1 0 001.414 0l4.5-4.5a1 1 0 10-1.414-1.414L11 10.586V5a1 1 0 00-1-1z" clip-rule="evenodd" /><path fill-rule="evenodd" d="M4 14a1 1 0 011-1h10a1 1 0 110 2H5a1 1 0 01-1-1z" clip-rule="evenodd" /></svg>
-                        </span>
-                    </div>
-                `;
-
-            card.addEventListener('click', () => handleTokenClick(token));
-            collectionContainer.appendChild(card);
-        });
-
-        const handleTokenClick = (token) => {
-            modalContent.innerHTML = `
-                    <div class="mb-4">
-                        <h3 class="text-lg font-semibold">${token.title}</h3>
-                        <p class="text-sm text-gray-600">Floor Price: ${token.price}</p>
-                        <p class="text-sm text-gray-600">Volume: ${token.volume}</p>
-                        <p class="text-sm text-gray-600">Change: <span class="${token.value > 0 ? 'text-green' : 'text-red'}">${token.value}%</span></p>
-                    </div>
-                `;
-            modal.classList.remove('hidden');
-        };
-
-        closeModalBtn.addEventListener('click', () => {
-            modal.classList.add('hidden');
-        });
-    </script>
 </body>
 
 </html>

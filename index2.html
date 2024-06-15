@@ -4,88 +4,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Footer</title>
+    <title>Airdrops</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <style>
-        .text-tetiary {
-            color: #6b7280;
-        }
-
-        .bg-light {
-            background-color: #f9fafb;
-        }
-
-        .bg-[#002953] {
-            background-color: #002953;
-        }
-
-        .text-[#003162] {
-            color: #003162;
-        }
-
-        .arrow_right {
-            color: white;
-        }
-
-        .copyright {
-            color: #6b7280;
-        }
-    </style>
 </head>
 
 <body>
-    <footer class="w-full bg-light">
-        <section
-            class="w-full flex items-center md:items-start justify-center md:justify-between flex-col p-[4%] mx-auto">
-            <section class="flex items-start justify-between flex-wrap w-full">
-                <div class="footer_left">
-                    <div class="footer_logo">
-                        <h2 class="text-4xl font-bold">D-Appsconnect</h2>
-                    </div>
-                    <p class="w-[13.6875rem] text-base my-4">Do almost everything with D-Appsconnect NFT market tools
-                        built for
-                        degens, by degens.</p>
-                    <ul class="flex items-center justify-between text-3xl text-tetiary">
-                        <li>
-                            <i class="fab fa-discord"></i>
-                        </li>
-                        <li>
-                            <i class="fab fa-twitter"></i>
-                        </li>
-                        <li>
-                            <i class="fab fa-telegram"></i>
-                        </li>
-                        <li>
-                            <i class="fab fa-github"></i>
-                        </li>
-                    </ul>
-                </div>
-                <div class="footer_right text-left md:text-right">
-                    <i>
-                        <h2 class="text-[1.72rem] text-left md:text-right mb-4">Know what's up</h2>
-                    </i>
-                    <form class="flex items-center justify-between bg-[#002953] mb-4 p-4">
-                        <input type="text" placeholder="your e-mail"
-                            class="bg-[#002953] outline-none text-white placeholder:text-tetiary" />
-                        <i class="fas fa-arrow-right arrow_right"></i>
-                    </form>
-                    <p class="font-normal text-[0.825rem] mb-2 flex items-center justify-start md:justify-end gap-2">
-                        <i class="far fa-copyright copyright"></i>
-                        <span>2024 D-Appsconnect Labs, Inc.</span>
-                    </p>
-                    <p>All Rights Reserved</p>
-                </div>
+    <section class="w-full h-full">
+        <section class="w-11/12 h-full mx-auto">
+            <section class="mt-36">
+                <h2 class="mb-4 text-2xl md:text-4xl">Latest Airdrops.</h2>
+                <p class="text-sm mb-4">
+                    Here you will find the most recent airdrop campaigns. <br /> Connect and get access to all available
+                    airdrops!
+                </p>
             </section>
-            <div class="w-full">
-                <h1
-                    class="text-[#003162] font-bold text-center w-full text-[2.118rem] sm:text-[4.45rem] md:text-[9.75rem] tracking-[0.1rem] sm:tracking-[0.5rem] md:tracking-[0.7rem]">
-                    D-Appsconnect
-                </h1>
-            </div>
+            <section id="airdropList" class="w-full flex items-center justify-between flex-wrap">
+                <!-- JavaScript will populate this section with airdrop cards -->
+            </section>
         </section>
-    </footer>
+    </section>
 
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <!-- Modal -->
+    <div id="modal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center hidden">
+        <div class="bg-white p-6 rounded-lg max-w-lg mx-auto">
+            <button id="closeModal" class="absolute top-0 right-0 mt-2 mr-2 text-gray-500">X</button>
+            <div id="modalContent">
+                <!-- Modal content will be populated by JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <script src="./main.js"></script>
 </body>
 
 </html>
