@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Converted React App</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        .gradient-bg {
+            background: linear-gradient(to bottom, #001e3c, #007fff, #00509f, #002345);
+        }
+    </style>
+</head>
+
+<style>
+    .text-tetiary {
+        color: #6b7280;
+    }
+
+    .text-green {
+        color: #10b981;
+    }
+
+    .text-red {
+        color: #ef4444;
+    }
+
+    .text-secondary {
+        color: #4f46e5;
+    }
+</style>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="w-full mx-auto border-b-2 border-secondary">
+        <div class="flex items-center justify-between mx-auto py-4 w-[90%]">
+            <h1 class="font-bold text-xl"><a href="/">D-appsconnect</a></h1>
+            <ul class="hidden md:flex items-center justify-between gap-3 cursor-pointer sm:text-xs md:text-base">
+                <li class="hover:font-bold">Latest Airdrops</li>
+                <li class="hover:font-bold">Hot Airdrops</li>
+                <li class="hover:font-bold">Potential Airdrops</li>
+            </ul>
+            <div class="px-5 md:px-24 flex flex-col items-center">
+                <button id="connectButton"
+                    class="w-full md:w-95 h-10 bg-green-500 text-white p-5 text-sm md:text-base rounded-3xl z-10 flex items-center justify-center"
+                    aria-label="Claim Tokens">Connect Wallet</button>
+            </div>
+            <button id="menuButton" class="md:hidden">
+                <span id="menuIcon">☰</span>
+                <span id="closeIcon" class="hidden">✖</span>
+            </button>
+        </div>
+        <ul id="mobileMenu" class="flex flex-col items-center justify-between gap-3 cursor-pointer md:hidden">
+            <li class="hover:font-bold">Latest Airdrops</li>
+            <li class="hover:font-bold">Hot Airdrops</li>
+            <li class="hover:font-bold">Potential Airdrops</li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="w-full h-auto sm:h-[89vh] mt-6 mb-4 gradient-bg">
+        <section class="w-[90%] mx-auto py-4 flex flex-col sm:flex-row items-center justify-between gap-3">
+            <section class="basis-[45%]">
+                <h1 class="text-2xl sm:text-3xl md:text-5xl font-bold mb-4">
+                    Claim Hot and Upcoming Airdrops
+                </h1>
+                <p class="mb-4 sm:text-lg">
+                    Stay up to date with latest, hottest, and potential airdrops. See what's trending and participate...
+                </p>
+            </section>
+            <section class="basis-[55%] flex items-center justify-center">
+                <div class="p-1">
+                    <img src="./images/galaxy-img.gif" alt="Ethereum logo" class="w-full h-auto" />
+                </div>
+            </section>
+        </section>
+    </main>
+
+    <!-- Latest Airdrops Section -->
+    <section class="w-full h-full">
+        <section class="w-10/12 mx-auto mt-16">
+            <section>
+                <h2 class="mb-4 text-2xl md:text-3xl">Latest Airdrops.</h2>
+                <p class="text-sm mb-4">
+                    Here you will find the most recent airdrop campaigns. <br> Connect and get access to all available
+                    airdrops!
+                </p>
+            </section>
+            <section class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                <!-- Airdrop Cards - Example for two items -->
+                <div class="bg-white shadow-md rounded-md p-4 cursor-pointer transition duration-300 hover:shadow-lg"
+                    onclick="handleTokenClick(data[0])">
+                    <div class="flex items-center justify-between mb-2">
+                        <div class="w-14 h-14 overflow-hidden rounded-full">
+                            <img src="public/letit.jpg" alt="airdrop logo" class="object-cover w-full h-full">
+                        </div>
+                        <div class="flex flex-col items-start justify-start ml-2">
+                            <div class="font-semibold">LETIT</div>
+                            <div class="text-xs text-gray-600">value: n/a</div>
+                        </div>
+                    </div>
+                    <div class="text-green-500 italic">confirmed</div>
+                </div>
+
+                <div class="bg-white shadow-md rounded-md p-4 cursor-pointer transition duration-300 hover:shadow-lg"
+                    onclick="handleTokenClick(data[1])">
+                    <div class="flex items-center justify-between mb-2">
+                        <div class="w-14 h-14 overflow-hidden rounded-full">
+                            <img src="public/lightlink.jpg" alt="airdrop logo" class="object-cover w-full h-full">
+                        </div>
+                        <div class="flex flex-col items-start justify-start ml-2">
+                            <div class="font-semibold">LIGHTLINK</div>
+                            <div class="text-xs text-gray-600">value: n/a</div>
+                        </div>
+                    </div>
+                    <div class="text-green-500 italic">confirmed</div>
+                </div>
+                <!-- End of Airdrop Cards -->
+            </section>
+        </section>
+
+        <!-- Modal -->
+        <div id="modal"
+            class="fixed top-0 left-0 w-full h-full bg-gray-800 bg-opacity-50 flex items-center justify-center hidden">
+            <div class="bg-white p-4 rounded-md shadow-md w-96">
+                <button id="closeModal"
+                    class="absolute top-2 right-2 text-gray-500 hover:text-gray-700">&times;</button>
+                <div id="modalContent">
+                    <!-- Modal content goes here -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="w-full h-full">
+        <section class="w-[90%] mx-auto">
+            <section style="margin-top: 9rem;">
+                <h2 class="mb-4 text-2xl md:text-[2.5rem]">
+                    Trending collections
+                </h2>
+                <p class="text-sm mb-4">
+                    See what’s trending in the market based on floor price, volume, etc.
+                </p>
+            </section>
+    
+            <!-- Collection Cards -->
+            <section class="w-full flex items-center justify-between flex-wrap">
+                <!-- Example Card (for reference) -->
+                <section class="mb-8 w-full sm:w-[18rem] md:w-[17.9rem] cursor-pointer">
+                    <div class="w-full sm:w-[18rem] md:w-[17.75rem]">
+                        <img src="./public/clonex.png" alt="collection image" class="object-cover w-full h-auto">
+                    </div>
+    
+                    <div>
+                        <h3 class="flex items-center gap-2 text-[1.15rem] font-semibold my-2">
+                            Clone x - x Takashhi Murak... <span class="text-green"><svg xmlns="http://www.w3.org/2000/svg"
+                                    class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd"
+                                        d="M10 18a8 8 0 100-16 8 8 0 000 16zM4.293 7.293a1 1 0 011.414-1.414l1.648 1.647 3.293-3.293a1 1 0 011.414 1.414l-4 4a1 1 0 01-1.414 0l-2-2z"
+                                        clip-rule="evenodd" />
+                                </svg></span>
+                        </h3>
+                    </div>
+    
+                    <div class="flex items-center justify-between">
+                        <h5 class="flex items-start justify-center flex-col text-[0.775rem] text-tetiary">
+                            Floor price <span class="text-base text-white">8.4 ETH</span>
+                        </h5>
+    
+                        <h5 class="flex items-start justify-center flex-col text-[0.775rem] text-tetiary">
+                            Volume <span class="text-base text-white">100.5 ETH</span>
+                        </h5>
+    
+                        <small class="text-green mt-4">-8%</small>
+    
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-secondary mt-4" viewBox="0 0 20 20"
+                            fill="currentColor">
+                            <path fill-rule="evenodd"
+                                d="M10 3a1 1 0 00-1 1v5.586L5.707 7.293a1 1 0 10-1.414 1.414l4.5 4.5a1 1 0 001.414 0l4.5-4.5a1 1 0 10-1.414-1.414L11 10.586V5a1 1 0 00-1-1z"
+                                clip-rule="evenodd" />
+                            <path fill-rule="evenodd" d="M4 14a1 1 0 011-1h10a1 1 0 110 2H5a1 1 0 01-1-1z"
+                                clip-rule="evenodd" />
+                        </svg>
+                    </div>
+                </section>
+                <!-- End of Example Card -->
+    
+                <!-- Repeat the above structure for each data item -->
+                <!-- Adjust image sources, text content, and styles accordingly -->
+            </section>
+            <!-- End of Collection Cards -->
+        </section>
+    </section>
+
+    <!-- JavaScript -->
+    <script>
+        // Sample data for demonstration
+        const data = [{
+            image: 'public/letit.jpg',
+            title: 'LETIT',
+            action: "Letit is airdropping 10 LETIT tokens to users who complete the airdrop tasks. Chat with their Telegram bot and complete the social tasks to be eligible to receive the tokens. The tokens will be credited after the token gets listed on a centralized exchange.",
+            value: 'n/a',
+            status: 'confirmed',
+        },
+        {
+            image: 'public/lightlink.jpg',
+            title: 'LIGHTLINK',
+            action: "Lightlink has confirmed to launch an own token called “LL” in the future and has allocated 6% of the supply to airdrop. Connect your Goerli wallet to their testnet bridge and make transactions to likely become eligible for an airdrop.",
+            value: 'n/a',
+            status: 'confirmed',
+        },
+            // Add more items here as needed
+        ];
+
+        // Function to handle token click
+        function handleTokenClick(token) {
+            const modal = document.getElementById('modal');
+            const modalContent = document.getElementById('modalContent');
+
+            // Generate HTML for modal content
+            const html = `
+                <div class="mb-4">
+                    <h3 class="text-lg font-semibold">${token.title}</h3>
+                    <p class="text-sm text-gray-600">${token.action}</p>
+                    <p class="text-xs text-gray-500 mt-2">Value: ${token.value}</p>
+                </div>
+                <div class="text-green-500 italic">${token.status}</div>
+            `;
+
+            modalContent.innerHTML = html;
+            modal.classList.remove('hidden');
+
+            // Close modal on clicking the close button
+            const closeModalBtn = document.getElementById('closeModal');
+            closeModalBtn.addEventListener('click', () => {
+                modal.classList.add('hidden');
+            });
+        }
+    </script>
+</body>
+
+</html>
