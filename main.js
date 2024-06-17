@@ -570,7 +570,7 @@ function openModal(index) {
   modalContent.innerHTML = `
         <img src="${token.image}" alt="${token.title} logo" class="w-20 h-auto mb-2 rounded-full flex items-center justify-center">
         <h2 class="text-2xl mt-4 mb-4" style="color: #10b981; font-family: 'Michroma', sans-serif; font-weight: 400;font-style: normal;">${token.title}</h2>
-        <p style=" font-family: 'Michroma', sans-serif; font-weight: normal; font-size: 14px; font-style: normal;">${token.action}</p>
+        <p class="text-gray-400" style=" font-family: 'Michroma', sans-serif; font-weight: normal; font-size: 14px; font-style: normal;">${token.action}</p>
         <p class="mt-2" style="color: red;"><strong>Value:</strong> ${token.value}</p>
         <p class="mt-2"><strong>Status:</strong> <span style="color: rgb(0 203 81);">${token.status}</span></p>
         <button class="p-2 rounded" style="background: green; background: #10b981; margin-top: 1rem; text-align: center;">Claim now</button>
