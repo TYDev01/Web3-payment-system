@@ -509,7 +509,7 @@ const datasm = [
   },
 
   {
-    image: "./images/Ethermail-logo.png",
+    image: "./images/EtherMail-logo.png",
     title: "EtherMail",
     action:
       "EtherMail is airdropping 250 EMC to users who sign up for the airdrop. Create an account at EtherMail by connecting your wallet and leave a secondary email to receive 250 EMC. Also get 250 EMC for each referral. All rewards will initially be allocated in EMC and will be converted to $EMT after the token launch.",
