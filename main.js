@@ -500,7 +500,7 @@ const datasm = [
   },
 
   {
-    image: "./images/entangle-logo.jpg",
+    image: "./images/Entangle-logo.jpg",
     title: "Entangle",
     action:
       "Entagle is airdropping 10,000,000 NGL tokens to various early testnet and community members. Users who’ve participated in testnets, validator runners on Entangle’s testnet, webverse stakers and users who received the “Airdrop Whitelist” role on Entangle’s discord are eligible for the airdrop.",
