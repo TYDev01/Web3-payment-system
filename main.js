@@ -1,6 +1,6 @@
 const datasm = [
   {
-    image: "./images/letit-logo.jpg",
+    image: "./images/Letit-logo.jpg",
     title: "LETIT",
     action:
       "Letit is airdropping 10 LETIT tokens to users who complete the airdrop tasks. Chat with their Telegram bot and complete the social tasks to be eligible to receive the tokens. The tokens will be credited after the token gets listed on a centralized exchange.",
@@ -8,7 +8,7 @@ const datasm = [
     status: "confirmed",
   },
   {
-    image: "./images/lightlink-logo.jpg",
+    image: "./images/Lightlink-logo.jpg",
     title: "LIGHTLINK",
     action:
       "Lightlink has confirmed to launch an own token called “LL” in the future and has allocated 6% of the supply to airdrop. Connect your Goerli wallet to their testnet bridge and make transactions to likely become eligible for an airdrop.",
@@ -34,7 +34,7 @@ const datasm = [
   },
 
   {
-    image: "./images/connext-logo.png",
+    image: "./images/Connext-logo.png",
     title: "Connext",
     action:
       "As predicted in our speculative airdrop section, Connext is airdropping 100,000,000 NEXT to early platform users. Users who transferred five or more times with an average value of at least $15 per transaction and a total volume exceeding $200 or provided at least $1,500 in liquidity to the Connext network for a minimum of 1 day are eligible for the airdrop.",
@@ -42,7 +42,7 @@ const datasm = [
     status: "confirmed",
   },
   {
-    image: "./images/altitude-logo.jpg",
+    image: "./images/Altitude-logo.jpg",
     title: "ALTITUDE",
     action:
       "Altitude has allocated 5% of the token supply to strategic airdrops. Use the bridge, stake assets and provide liquidity to earn free ALTD tokens.",
@@ -60,7 +60,7 @@ const datasm = [
   },
 
   {
-    image: "./images/hinkal-logo.png",
+    image: "./images/Hinkal-logo.png",
     title: "HINKAL",
     action:
       "Hinkal has raised $4.1 million in funding from investors like Draper Associates and NGC Ventures. They don’t have their own token yet but could launch one in the future. Early users who use the platform to deposit, swap, stake, etc, may get an airdrop if they launch their token.",
@@ -68,7 +68,7 @@ const datasm = [
     status: "unconfirmed",
   },
   {
-    image: "./images/frame-logo.png",
+    image: "./images/Frame-logo.png",
     title: "FRAME",
     action:
       "Frame is airdropping FRAME tokens to anyone who has traded an NFT in the past two years. If you are eligible, you will be able to claim free FRAME tokens based on your NFT activity.",
@@ -77,7 +77,7 @@ const datasm = [
   },
 
   {
-    image: "./images/swell-logo.jpg",
+    image: "./images/Swell-logo.jpg",
     title: "SWELL",
     action:
       "Swell has raised a total of $3.8M in funding from investors like Framework Ventures and Mark Cuban. They’ve launched a Voyage campaign in which they’re airdropping a total of 50,000,000 SWELL tokens to users who stake ETH.",
@@ -86,7 +86,7 @@ const datasm = [
   },
 
   {
-    image: "./images/reveel-logo.jpg",
+    image: "./images/Reveel-logo.jpg",
     title: "REVEEL",
     action:
       "Reveel has raised a total of $1.3M in funding from investors like Binance. Users who create a revenue path or use the bridge on the platform may likely become eligible for an airdrop if they ever launch their own token.",
@@ -104,7 +104,7 @@ const datasm = [
   },
 
   {
-    image: "./images/presearch-logo.jpg",
+    image: "./images/Presearch-logo.jpg",
     title: "PRESEARCH",
     action:
       "Presearch is airdropping a total of 50M PRE tokens to search stakers and node runners. A snapshot of the search stakers and node runners was taken on December 29th, 2023. Eligible users will get free PRE based on the stakes as well as a bonus of 2% of the staked tokens per month. New users will get 75 PRE for signing up with our exclusive link and a bonus of 1% of the staked tokens per month.",
@@ -113,7 +113,7 @@ const datasm = [
   },
 
   {
-    image: "./images/undeads-logo.jpg",
+    image: "./images/Undeads-logo.jpg",
     title: "UNDEADS",
     action:
       "Undeads is airdropping a total of $3,000,000 worth of UDS tokens to users who do simple tasks. Visit the Dmissions page and complete simple tasks to share 2,500,000 UDS, users who play the Undeads game will share 5,000,000 UDS and users who hold any of Undeads NFTs will share 2,500,000 UDS.",
@@ -131,7 +131,7 @@ const datasm = [
   },
 
   {
-    image: "./images/pixels-logo.jpg",
+    image: "./images/Pixels-logo.jpg",
     title: "PIXELS",
     action:
       "Pixels have airdropped PIXEL to users who signed up and completed simple tasks. Users who participated in Airdrop Season 1 and Season 2 can now withdraw the tokens as mentioned below. Users who had staked RON by February 8th at 2:00:00 GMT are also eligible for an additional 20M PIXEl airdrop. PIXEL is also live on Binance, so you can withdraw your tokens to Binance if you wish to.",
@@ -140,7 +140,7 @@ const datasm = [
   },
 
   {
-    image: "./images/lava-logo.jpg",
+    image: "./images/Lava-logo.jpg",
     title: "LAVA",
     action:
       "Lava has raised $15M in funding from investors like HashKey Capital and Jump Capital and has also confirmed to launch the “LAVA” token. They have introduced a points system where users can earn points by signing up, changing their wallet’s blockchain connection to Lava, and using the wallet as usual. Also, earn 10% of the points from each referral. Users who collect points may get an airdrop when their token goes live.",
@@ -176,7 +176,7 @@ const datasm = [
   },
 
   {
-    image: "./images/kelp-DAO-logo.jpg",
+    image: "./images/Kelp-DAO-logo.jpg",
     title: "KELP DAO",
     action:
       "Kelp DAO doesn’t have their own governance token but has launched a points program called Kelp Miles and hinted at rewarding users. To start earning Kelp miles and EigenLayer points, stake ETH or other LSTs like stETH or provide liquidity to the rsETH pools. Users who collect Kelp Miles will likely get an airdrop if they launch their own token.",
@@ -185,7 +185,7 @@ const datasm = [
   },
 
   {
-    image: "./images/sharpe-Labs-logo.jpg",
+    image: "./images/Sharpe-Labs-logo.jpg",
     title: "SHARPE",
     action:
       "Sharpe has confirmed to launch their token “SHARPE” and do an airdrop to users who collect points. Sign up at Sharpe to receive 100 Sharpe points. Also, invest in the Sharpe Earn strategies such as Lido stETH and Rocketpool rETH to earn more points. The points will get converted to SHARPE tokens after the token goes live. Sharpe has confirmed to launch their token $SHARPE and is organising an #airdrop for users who collect points. Here are all the details",
@@ -194,7 +194,7 @@ const datasm = [
   },
 
   {
-    image: "./images/coti-logo.jpg",
+    image: "./images/COTI-logo.jpg",
     title: "COTI",
     action:
       "COTI is airdropping a total of 40M COTI tokens to past and new COTI participants. Visit the COTI treasury and deposit COTI tokens to share the total pool. For every Treasury deposit, you’ll start accumulating APY rewards that are redeemable at any given time. On top of that, you’ll get a share of 40M COTI V2 Tokens rewards that will be distributed after the COTI V2 TGE, which is planned for Q4 this year",
@@ -212,7 +212,7 @@ const datasm = [
   },
 
   {
-    image: "./images/karak-logo.jpg",
+    image: "./images/Karak-logo.jpg",
     title: "KARAK",
     action:
       "Karak has raised $48M in funding from investors like Coinbase and Pantera Capital and has launched an XP campaign. Users who sign up and stake LSTs from Ethereum, Arbitrum or Karak to Karak will earn XPs. Also, earn more XPs from each referral. They don’t have their own token yet but are very likely to launch one in the future. The XPs would likely be converted to their token if the token goes live.",
@@ -221,7 +221,7 @@ const datasm = [
   },
 
   {
-    image: "./images/debridge-logo.jpg",
+    image: "./images/deBridge-logo.jpg",
     title: "deBridge",
     action:
       "deBridge has raised $5.5M in funding from investors like Animoca Brands and ParaFi Capital and has also launched a points campaign. Users who make swaps on their cross-chain bridge can earn points based on their volume. Also, earn 25% of the points from each referral. They have announced the launch of their governance token “DBR” and has allocated 20% of the total supply for community & launch. They’ve also confirmed to allocate an undisclosed percentage of the supply for “Genesis community airdrop”. Early users who use the bridge and collect points will get the airdrop when their token goes live.",
@@ -230,7 +230,7 @@ const datasm = [
   },
 
   {
-    image: "./images/solv-Protocol.jpg",
+    image: "./images/Solv-Protocol.jpg",
     title: "SOLV PROTOCOL",
     action:
       "Solv Protocol has raised $11M in funding from investors like Binance Labs and Apollo Capital and has launched an XP campaign. They’ve also confirmed to launch their token “SOLV” and do an airdrop of SOLV tokens for users who collect XPs. Deposit tokens and collect XPs to be eligible for the airdrop when the token goes live. You can also earn 10% of the XPs from each referral.",
@@ -248,7 +248,7 @@ const datasm = [
   },
 
   {
-    image: "./images/moongate-logo.jpg",
+    image: "./images/Moongate-logo.jpg",
     title: "MOONGATE",
     action:
       "Moongate has confirmed to launch their token “MGT” and plans to airdrop to users who participate in their airdrop campaign. Sign up for the open v2 beta of Moongate’s platform and engage in various quests. Participants engaging with Moongate’s beta platform will be eligible for an airdrop upon the official launch of the MGT Token.",
@@ -257,7 +257,7 @@ const datasm = [
   },
 
   {
-    image: "./images/zoth-logo.jpg",
+    image: "./images/ZOTH-logo.jpg",
     title: "ZOTH",
     action:
       "Zoth has raised $2.5M in funding from investors like Blockchain Founders Fund and Wormhole and is airdropping 20,000,000 ZOTH to the testnet airdrop participants. Join the testnet campaign and complete simple tasks to earn XPs. Invite your friends to earn more XPs. The amount of XPs you earn will determine your share of the ZOTH airdrop.",
@@ -275,7 +275,7 @@ const datasm = [
   },
 
   {
-    image: "./images/ambient-logo.jpg",
+    image: "./images/Ambient-logo.jpg",
     title: "AMBIENT",
     action:
       "Ambient has raised a total of $6.5M from investors like Circle and Naval Ravikant and has launched a points system. They don’t have their own token yet but could launch their own token in the future. Early users who trade on the platform and collect points may get an airdrop if they launch their token. They’ve also allocated 100% of the Blast airdrop they receive to its users.",
@@ -284,7 +284,7 @@ const datasm = [
   },
 
   {
-    image: "./images/notional-logo.jpg",
+    image: "./images/Notional-logo.jpg",
     title: "NOTIONAL",
     action:
       "Notional is airdropping 0.75% of the total supply to various early users of the platform. A snapshot was taken on July 4th, 2021 at 00:00 GMT and users who have borrowed, lent or provided liquidity more than or equal to 50 DAI/USDC as of the snapshot date are eligible to claim between 600 NOTE and 1800 NOTE.",
@@ -293,7 +293,7 @@ const datasm = [
   },
 
   {
-    image: "./images/memecoin-logo.jpg",
+    image: "./images/Memecoin-logo.jpg",
     title: "MEMECOIN",
     action:
       "Memecoin has airdropped MEME to users who’ve participated in the Memecoin farming campaign. Users who’ve participated in the airdrop campaign have now received the tokens. There’s no claim required as the amount has already been staked on Stakeland.",
@@ -311,7 +311,7 @@ const datasm = [
   },
 
   {
-    image: "./images/zyfi-logo.jpg",
+    image: "./images/Zyfi-logo.jpg",
     title: "Zyfi",
     action:
       "Zyfi has launched a quest program and allocated 10% of the total supply to the community, including for the quest participants. Join the campaign and complete simple tasks to earn points. You’ll also get 10% of the points from each referral. Users who join the campaign and collect points will get an airdrop when their token goes live.",
@@ -320,7 +320,7 @@ const datasm = [
   },
 
   {
-    image: "./images/xtremeverse-logo.png",
+    image: "./images/Xtremeverse-logo.png",
     title: "Xtremeverse",
     action:
       "Xtremeverse has raised $6M in funding from investors like Hashed Emergent and Yield Guild Games and has launched a points campaign. Connect your wallet and Twitter to start earning points. Hold their NFT token “XTREME” to earn additional points. Also get 100 points from each referral. They’ve confirmed to launch “XVERSE” token in the future and do an airdrop to users who collect points.",
@@ -329,7 +329,7 @@ const datasm = [
   },
 
   {
-    image: "./images/phaver-logo.jpg",
+    image: "./images/Phaver-logo.jpg",
     title: "Phaver",
     action:
       "Phaver is airdropping 3% of the total supply of SOCIAL tokens to airdrop participants. Users who’ve connected a Lens profile, Farcaster profile, and at least one Cred item to Phaver and reach at least Level 2 in the app are eligible to receive points. The points will be converted to SOCIAL tokens at 1:1 ratio after TGE.",
@@ -347,7 +347,7 @@ const datasm = [
   },
 
   {
-    image: "./images/ethena-logo.png",
+    image: "./images/Ethena-logo.png",
     title: "ETHENA",
     action:
       "Ethena is airdropping 5% of the total supply of ENA tokens to users who interacted with Ethena and collected shards. Users who collected shards until April 1st, 2023 are eligible for the airdrop. Season 2 of the airdrop campaign has also begun, which will airdrop at least 10% of the total supply and continue until September 2nd, 2024 (or when the USDe supply hits $5 billion). In Season 2, “Shards” have been replaced with “Sats”.",
@@ -509,7 +509,7 @@ const datasm = [
   },
 
   {
-    image: "./images/ethermail-logo.png",
+    image: "./images/Ethermail-logo.png",
     title: "EtherMail",
     action:
       "EtherMail is airdropping 250 EMC to users who sign up for the airdrop. Create an account at EtherMail by connecting your wallet and leave a secondary email to receive 250 EMC. Also get 250 EMC for each referral. All rewards will initially be allocated in EMC and will be converted to $EMT after the token launch.",
@@ -518,7 +518,7 @@ const datasm = [
   },
 
   {
-    image: "./images/zksync-logo-1.jpg",
+    image: "./images/zkSync-logo-1.jpg",
     title: "ZKSYNC",
     action:
       "zkSync has raised a total of $458 million from leading investors like Blockchain Capital and Dragonfly Capital. They’ve hinted that they will launch their native token in the future, so trying out their mainnet and testnet may make you eligible for an airdrop when they launch their token. We highly recommend you to do transactions on a regular basis to increase your chances to become eligible, like every month or week for example.",
