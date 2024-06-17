@@ -951,7 +951,12 @@ datasmd.forEach((token, index) => {
 const handleTokenClick = (token) => {
   modalContent.innerHTML = `
                     <div class="mb-4">
-                        <h3 class="text-lg font-semibold">${token.title}</h3>
+                        <img src="${
+                          token.image
+                        }" alt="collection image" class="w-full h-auto object-cover rounded-lg pb-3">
+                        <h3 class="text-lg font-semibold" style="color: #10b981; font-family: 'Michroma', sans-serif; font-weight: 400;font-style: normal;">${
+                          token.title
+                        }</h3>
                         <p class="text-sm text-gray-600">Floor Price: ${
                           token.price
                         }</p>
