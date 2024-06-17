@@ -568,10 +568,12 @@ datasm.forEach((token, index) => {
 function openModal(index) {
   const token = datasm[index];
   modalContent.innerHTML = `
-        <h2 class="text-2xl mb-4">${token.title}</h2>
+        <img src="${token.image}" alt="${token.title} logo" class="w-20 h-auto mb-2 rounded-full flex items-center justify-center">
+        <h2 class="text-2xl mb-4" style="color: #fc3215;">${token.title}</h2>
         <p>${token.action}</p>
-        <p class="mt-2"><strong>Value:</strong> ${token.value}</p>
-        <p class="mt-2"><strong>Status:</strong> ${token.status}</p>
+        <p class="mt-2" style="color: red;"><strong>Value:</strong> ${token.value}</p>
+        <p class="mt-2"><strong>Status:</strong> <span style="color: rgb(0 203 81);">${token.status}</span></p>
+        <button class="p-2 rounded" style="background: green; background: #10b981; margin-top: 1rem; text-align: center;">Claim now</button>
     `;
   modal.classList.remove("hidden");
 }
